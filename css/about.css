@@ -1,0 +1,216 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004AAD;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #FFDD57;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Contact Page */
+.products {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.products h2 {
+  text-align: center;
+  color: #004AAD;
+  margin-bottom: 1rem;
+}
+
+.products p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.products form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.products form label {
+  font-weight: 600;
+}
+
+.products form input,
+.products form textarea {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.products form button {
+  background-color: #004AAD;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.products form button:hover {
+  background-color: #003280;
+}
+
+.products a {
+  color: #004AAD;
+  text-decoration: underline;
+}
+/* --- Attractive Footer Styles --- */
+.footer {
+    background-color: #2c3e50; /* A modern dark blue/grey */
+    color: #ecf0f1; /* Light text for contrast */
+    padding: 30px 20px; /* Vertical and horizontal padding */
+    text-align: center; /* Center all content */
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally in the column */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+}
+
+.footer .footer-links {
+    margin-bottom: 25px; /* Space below the support links */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+}
+
+.footer .footer-links p { /* Styling for the "Support" heading */
+    color: #ffffff; /* White color for the heading */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer .footer-links a {
+    color: #b0c4de; /* A slightly subdued, light blue for links */
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 5px 0; /* Vertical padding for click area */
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: block; /* Make links block level for full width hover effect */
+}
+
+.footer .footer-links a:hover {
+    color: #3498db; /* Brighter blue on hover */
+    transform: translateX(5px); /* Slight slide effect on hover */
+}
+
+.footer p { /* Copyright text */
+    margin-top: 0;
+    margin-bottom: 20px; /* Space below copyright */
+    font-size: 0.85rem;
+    color: #acb1b7; /* Slightly darker grey for copyright */
+}
+
+.footer .social {
+    display: flex; /* Arrange social links horizontally */
+    gap: 20px; /* Space between social links */
+    justify-content: center; /* Center social icons */
+    margin-bottom: 10px; /* Small space below social icons */
+}
+
+.footer .social a {
+    color: #b0c4de; /* Link color for social icons */
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger for social icons */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer .social a:hover {
+    color: #3498db; /* Brighter blue on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* --- Media Queries for Responsiveness (adjust footer specifically) --- */
+@media (max-width: 768px) {
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-links p {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .footer .footer-links a {
+        font-size: 0.9rem;
+        padding: 3px 0;
+    }
+
+    .footer .social {
+        gap: 15px;
+    }
+    
+    .footer .social a {
+        font-size: 1rem;
+    }
+}

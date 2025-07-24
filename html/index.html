@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FirstBench</title>
+  <link rel="stylesheet" href="../css//styles.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">FirstBench</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#pricing">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Hero Section with Video -->
+  <section id="home" class="hero">
+    <div class="carousel">
+      <video autoplay loop muted playsinline>
+        <source src="../images/cursoel.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      </section>
+   <!-- Hero Section with Video and Image -->
+<!-- SDK Features Section -->
+<section class="sdk-section">
+  <div class="sdk-content">
+    <div class="sdk-image">
+      <img src="../images/laptop.avif" alt="SDK Laptop Image" />
+    </div>
+    <div class="sdk-text">
+      <h2>We build SDKs which you integrate in your Mobile & Web Apps super quick.</h2>
+      <ul>
+        <li>Transform your ideas into captivating online learning experience with our liveclass SDK</li>
+        <li>We specialize in creating performance optimised SDKs</li>
+        <li>Platform with plug and play functionality.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Tech Infrastructure Section -->
+  
+<section class="tech-infra">
+  <div class="tech-content">
+    <h2>Tech Infrastructure for EdTech 🔥</h2>
+    <p>We provide Tech Infrastructure to EdTech so they don’t have to worry about building Tech.</p>
+    <a href="#products" class="browse-btn">Browse Products</a>
+  </div>
+  <div class="tech-video">
+    <video autoplay muted loop playsinline>
+      <source src="../images/eedtech2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+
+
+
+ <section id="products" class="products">
+  <h2>Our Products.</h2>
+  <p class="product-subtext">
+    Revolutionize your classroom with FirstBench’s cutting-edge EdTech solution.
+    Seamlessly integrating messaging, live class management tools, and advanced analytics,
+    our platform empowers educators to inspire, track, and personalize learning like never before.
+    Join the future of education today.
+  </p>
+
+  <div class="product-grid">
+     <div class="product-card">
+  <a href="https://messaging.firstbench.co/" target="_blank" class="card-link">
+    <div class="product-icon">💬</div>
+    <h3>WaaR</h3>
+    <p>
+      Unlock WhatsApp’s marketing power with our tool. Drive conversions, engage customers, and streamline communication effortlessly.
+    </p>
+  </a>
+</div>
+    <div class="product-card">
+      <div class="product-icon">🎥</div>
+      <h3>Live Class</h3>
+      <p>Create, manage live classes with features like Teacher Panel and Admin Panel for student classroom solutions across platforms.</p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">👨‍🏫</div>
+      <h3>Ask Doubts</h3>
+      <p>Connect students with teachers instantly using AI-first support to resolve doubts and accelerate learning outcomes.</p>
+    </div>
+  </div>
+</section>
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Creating Web Experiences & Mobile Apps that redefine user experiences.</h2>
+    <p>Let’s reimagine what we can achieve on the web, together.</p>
+    <a href="contact.html" class="cta-button">Process Demo</a>
+  </div>
+</section>
+
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Liveclass SDK Pricing</h2>
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>₹2,500.00/month</p>
+        <ul>
+          <li>Analytics</li>
+          <li>100 participants per day</li>
+          <li>2 rooms a day</li>
+        </ul>
+        <a href="contact.html" class="btn">Get Started</a>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>₹5,000.00/month</p>
+        <ul>
+          <li>Advanced analytics</li>
+          <li>1000 participants per day</li>
+          <li>10 rooms a day</li>
+        </ul>
+        <a href="contact.html" class="btn">Get Started</a>
+      </div>
+      <div class="plan">
+        <h3>Pay as you go</h3>
+        <p>As per Usage</p>
+        <ul>
+          <li>₹1.15 per participant</li>
+          <li>₹20 per room</li>
+          <li>Unlimited participants and rooms</li>
+        </ul>
+        <a href="contact.html" class="btn">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+        <div class="footer-links">
+            <P>Support</P>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <p>© Copyright FirstBench</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+    <script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

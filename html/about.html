@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - FirstBench</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --bg: #0f0f1b;
+      --text: #f0f0f0;
+      --card-bg: #1a1a2e;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    /* === Navbar === */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--card-bg);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* === About Section === */
+    .products {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2.5rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .products h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .products p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+
+    /* === Footer === */
+    .footer {
+      background-color: var(--card-bg);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .social a {
+      margin: 0 0.5rem;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: var(--primary);
+    }
+
+    @media screen and (max-width: 768px) {
+      .products {
+        margin: 2rem 1rem;
+        padding: 2rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">FirstBench</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- About Section -->
+  <section class="products">
+    <h2>About Us</h2>
+    <p>At FirstBench, we empower businesses with cutting-edge SDKs and plug-and-play solutions for web and mobile applications. Specializing in LiveClass, Chat, and other interactive tools, we provide a seamless way for EdTech companies to integrate powerful features into their platforms—without the hassle of building from scratch.</p>
+    <p>Our comprehensive platform is designed for scalability, reliability, and ease of integration, allowing businesses to focus on innovation while we handle the technology. Whether you need a real-time communication SDK, an interactive learning environment, or a custom-built API, we have you covered.</p>
+    <p>With a mission to simplify development and accelerate growth, we are committed to delivering high-performance, developer-friendly solutions that enhance engagement and drive success.</p>
+    <p><strong>Plug. Play. Scale.</strong> That’s the FirstBench promise.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms and Conditions</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <p>© Copyright FirstBench</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+</body>
+</html>
